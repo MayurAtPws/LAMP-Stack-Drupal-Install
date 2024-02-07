@@ -19,7 +19,7 @@ drush install dev : https://drupalize.me/tutorial/install-drush-using-composer
 
 - making sure to Add Drush with Composer
 
-        cd "/var/www/html/drupal" && composer require drush/drush
+        cd "/var/www/html/drupal" && composer require --dev drush/drush
 
 
 - update db 

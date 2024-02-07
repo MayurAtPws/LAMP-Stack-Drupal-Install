@@ -123,7 +123,7 @@ resource :
 
 - making sure to Add Drush with Composer
 
-        cd "/var/www/html/drupal" && composer require drush/drush
+        cd "/var/www/html/drupal" && composer require --dev drush/drush
 
 
 # Configuring HTTPD Server 
