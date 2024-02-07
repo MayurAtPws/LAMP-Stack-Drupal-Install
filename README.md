@@ -6,6 +6,7 @@
 - Package manager : DNF
 - PHP : v8.2
 - MariaDB : v10.5
+- Apache : v2.4.58
 
 ## LAMP Installation 
 resource : https://docs.aws.amazon.com/linux/al2023/ug/ec2-lamp-amazon-linux-2023.html
@@ -82,6 +83,8 @@ resource : https://getcomposer.org/download/
 
 resource : https://drupalize.me/tutorial/install-drush-using-composer
 
+⚠️ Note : Recommended to use drush as dev dependency (check the above resource link)
+
 - Download the drush & Add to path
 
         wget -O drush.phar https://github.com/drush-ops/drush-launcher/releases/latest/download/drush.phar
@@ -117,6 +120,10 @@ resource :
         chcon -R -t httpd_sys_content_rw_t /var/www/html/drupal/
 
         chmod -R 777 /var/www/html/drupal/web/sites
+
+- making sure to Add Drush with Composer
+
+        cd "/var/www/html/drupal" && composer require drush/drush
 
 
 # Configuring HTTPD Server 
